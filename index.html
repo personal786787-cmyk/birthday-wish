@@ -1,232 +1,327 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Happy Birthday Fathima Shifa</title>
+<title>Happy Birthday Fathima Shifa ✨</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-background:#080808;
-color:#f5e6c8;
-font-family:'Montserrat',sans-serif;
-text-align:center;
-overflow-x:hidden;
+html {
+    scroll-behavior: smooth;
 }
 
-.gold{
-color:#d8b56d;
+body {
+    background: #080808;
+    color: #f5e6c8;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
 }
 
-h1,h2{
-font-family:'Cormorant Garamond',serif;
-font-weight:500;
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 20%, #b58b4318, transparent 35%),
+        radial-gradient(circle at 80% 70%, #b58b4315, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
 }
 
-h1{
-font-size:clamp(45px,9vw,85px);
-color:#e8c77e;
-letter-spacing:3px;
-text-shadow:0 0 25px #c49a4a55;
+section {
+    padding: 90px 20px;
+    position: relative;
+    z-index: 2;
 }
 
-h2{
-font-size:35px;
-color:#dfbd78;
-margin-bottom:25px;
+h1, h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
 }
 
-p{
-font-size:16px;
-line-height:2;
-color:#d4c6a9;
-font-weight:300;
+h1 {
+    font-size: clamp(45px, 9vw, 85px);
+    color: #f1d28c;
+    letter-spacing: 3px;
+    text-shadow: 0 0 25px #c49a4a66;
 }
 
-section{
-padding:90px 20px;
-position:relative;
-z-index:2;
+h2 {
+    font-size: 36px;
+    color: #dfbd78;
+    margin-bottom: 25px;
 }
 
-button{
-background:linear-gradient(135deg,#b58b43,#f3d58c,#a77b35);
-color:#17100a;
-border:none;
-padding:16px 35px;
-font-size:13px;
-letter-spacing:2px;
-font-weight:600;
-cursor:pointer;
-margin:25px;
-transition:.4s;
+p {
+    font-size: 16px;
+    line-height: 2;
+    color: #d4c6a9;
+    font-weight: 300;
 }
 
-button:hover{
-transform:translateY(-4px);
-box-shadow:0 0 30px #d8b56d88;
+button {
+    background: linear-gradient(120deg, #a77b35, #f5d995, #a77b35);
+    background-size: 200% auto;
+    color: #17100a;
+    border: 1px solid #f5d995;
+    padding: 16px 35px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 25px 10px;
+    transition: .4s;
+    animation: buttonShine 4s infinite linear;
 }
 
-.hidden{
-display:none!important;
+button:hover {
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 0 0 30px #d8b56d99;
 }
 
-#intro{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:25px;
+.hidden {
+    display: none !important;
 }
 
-.subtitle{
-letter-spacing:5px;
-font-size:11px;
-color:#c5a66a;
-margin-bottom:25px;
+#intro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    animation: fadeIn 2s ease;
 }
 
-.line{
-width:100px;
-height:1px;
-background:#c8a45d;
-margin:25px auto;
+.subtitle {
+    letter-spacing: 5px;
+    font-size: 11px;
+    color: #c5a66a;
+    margin-bottom: 25px;
 }
 
-.card{
-max-width:700px;
-margin:30px auto;
-padding:45px 25px;
-border:1px solid #b18a4c66;
-background:linear-gradient(145deg,#171512,#0c0c0c);
-box-shadow:0 10px 50px #000;
+.line {
+    width: 100px;
+    height: 1px;
+    background: #c8a45d;
+    margin: 25px auto;
+    box-shadow: 0 0 15px #d8b56d;
 }
 
-.photo-frame{
-display:inline-block;
-padding:12px;
-border:1px solid #d4af65;
-margin:35px 0;
-box-shadow:0 0 35px #c49a4a33;
+.card {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 45px 25px;
+    border: 1px solid #b18a4c66;
+    background: linear-gradient(145deg, #171512, #0c0c0c);
+    box-shadow: 0 10px 50px #000;
+    transition: .5s;
 }
 
-.main-photo{
-width:240px;
-height:290px;
-object-fit:cover;
-display:block;
+.card:hover {
+    border-color: #e8c77e;
+    box-shadow: 0 0 35px #c49a4a22;
 }
 
-.photo-caption{
-font-family:'Cormorant Garamond',serif;
-font-size:24px;
-color:#dfbd78;
-margin-top:18px;
+.photo-frame {
+    display: inline-block;
+    padding: 12px;
+    border: 1px solid #d4af65;
+    margin: 35px 0;
+    position: relative;
+    background: #111;
+    box-shadow: 0 0 30px #c49a4a44;
+    animation: photoFloat 5s ease-in-out infinite;
 }
 
-.gold-text{
-font-family:'Cormorant Garamond',serif;
-font-size:30px;
-color:#e5c47d;
-margin:25px 0;
+.photo-frame::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border: 1px solid #f5d995;
+    opacity: .5;
+    animation: borderGlow 3s infinite alternate;
 }
 
-.memory-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-margin-top:30px;
+.main-photo {
+    width: 240px;
+    height: 290px;
+    object-fit: cover;
+    display: block;
 }
 
-.memory{
-padding:25px 15px;
-border:1px solid #b18a4c55;
-background:#14120f;
+.photo-caption {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    color: #dfbd78;
+    margin-top: 18px;
 }
 
-.memory span{
-display:block;
-font-size:30px;
-margin-bottom:15px;
+.gold-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: #e5c47d;
+    margin: 25px 0;
 }
 
-.envelope{
-font-size:75px;
-cursor:pointer;
-margin:30px;
-transition:.4s;
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
 }
 
-.envelope:hover{
-transform:scale(1.1);
-filter:drop-shadow(0 0 20px #d8b56d);
+.memory {
+    padding: 25px 15px;
+    border: 1px solid #b18a4c55;
+    background: #14120f;
+    transition: .4s;
 }
 
-#letter,#surprise{
-display:none;
-animation:fade 1s ease;
+.memory:hover {
+    transform: translateY(-8px);
+    border-color: #e8c77e;
+    box-shadow: 0 0 20px #d8b56d33;
 }
 
-.particle{
-position:fixed;
-width:3px;
-height:3px;
-background:#e8c77e;
-border-radius:50%;
-pointer-events:none;
-z-index:1;
-animation:sparkle 3s infinite alternate;
+.memory span {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
-.confetti{
-position:fixed;
-top:-20px;
-width:7px;
-height:12px;
-background:#d8b56d;
-z-index:10;
-pointer-events:none;
-animation:fall 4s linear forwards;
+.envelope {
+    font-size: 75px;
+    cursor: pointer;
+    margin: 30px;
+    transition: .4s;
+    animation: envelopeFloat 3s ease-in-out infinite;
 }
 
-footer{
-padding:40px 20px;
-border-top:1px solid #b18a4c55;
-background:#050505;
+.envelope:hover {
+    transform: scale(1.2) rotate(-8deg);
+    filter: drop-shadow(0 0 20px #d8b56d);
 }
 
-@keyframes sparkle{
-from{opacity:.15;transform:scale(.5)}
-to{opacity:1;transform:scale(1.5)}
+#letter, #surprise {
+    display: none;
+    animation: reveal 1.2s ease forwards;
 }
 
-@keyframes fade{
-from{opacity:0;transform:translateY(25px)}
-to{opacity:1;transform:translateY(0)}
+.particle {
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    background: #e8c77e;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    box-shadow: 0 0 8px #f5d995;
+    animation: sparkle 3s infinite alternate;
 }
 
-@keyframes fall{
-to{
-transform:translateY(110vh) rotate(720deg);
-opacity:0;
-}
+.confetti {
+    position: fixed;
+    top: -20px;
+    width: 7px;
+    height: 12px;
+    background: #d8b56d;
+    z-index: 10;
+    pointer-events: none;
+    animation: fall 4s linear forwards;
 }
 
-@media(max-width:500px){
-.main-photo{
-width:210px;
-height:260px;
+footer {
+    padding: 40px 20px;
+    border-top: 1px solid #b18a4c55;
+    background: #050505;
+    position: relative;
+    z-index: 2;
 }
+
+.reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#fireworks {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 8;
+}
+
+@keyframes sparkle {
+    from { opacity: .15; transform: scale(.5); }
+    to { opacity: 1; transform: scale(1.6); }
+}
+
+@keyframes photoFloat {
+    0%, 100% { transform: translateY(0) rotate(-1deg); }
+    50% { transform: translateY(-12px) rotate(1deg); }
+}
+
+@keyframes borderGlow {
+    from { opacity: .2; box-shadow: 0 0 5px #d8b56d; }
+    to { opacity: 1; box-shadow: 0 0 25px #d8b56d; }
+}
+
+@keyframes envelopeFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes buttonShine {
+    from { background-position: 0% center; }
+    to { background-position: 200% center; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes reveal {
+    from { opacity: 0; transform: translateY(30px) scale(.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width:500px) {
+    .main-photo {
+        width: 210px;
+        height: 260px;
+    }
+
+    section {
+        padding: 65px 15px;
+    }
+
+    .card {
+        padding: 30px 18px;
+    }
 }
 </style>
 </head>
@@ -234,293 +329,10 @@ height:260px;
 <body>
 
 <div id="particles"></div>
+<canvas id="fireworks"></canvas>
 
-<!-- INTRO -->
+<!-- WELCOME SCREEN -->
 
 <section id="intro">
 
-<p class="subtitle">A SPECIAL CELEBRATION</p>
-
-<h1>A Night To<br>Remember</h1>
-
-<div class="line"></div>
-
-<p>
-Some people deserve more than ordinary wishes.
-<br>
-This little surprise is just for you.
-</p>
-
-<button onclick="startWebsite()">ENTER YOUR SURPRISE</button>
-
-</section>
-
-<!-- MAIN -->
-
-<div id="main" class="hidden">
-
-<section>
-
-<p class="subtitle">TODAY IS ALL ABOUT YOU</p>
-
-<h1>Happy Birthday</h1>
-
-<div class="line"></div>
-
-<h2 style="font-size:45px">Fathima Shifa</h2>
-
-<div class="photo-frame">
-
-<img src="shifa.png" class="main-photo" alt="Fathima Shifa">
-
-<div class="photo-caption">A Beautiful Soul</div>
-
-</div>
-
-<p>
-May your life be filled with beautiful moments,
-endless happiness and unforgettable memories.
-</p>
-
-<p class="gold-text">
-You deserve the very best.
-</p>
-
-</section>
-
-<section>
-
-<div class="card">
-
-<p class="subtitle">A FEW WORDS ABOUT YOU</p>
-
-<h2>Simply Extraordinary</h2>
-
-<div class="line"></div>
-
-<div class="memory-grid">
-
-<div class="memory">
-<span>✦</span>
-<p>Your Kind Heart</p>
-</div>
-
-<div class="memory">
-<span>✧</span>
-<p>Your Beautiful Smile</p>
-</div>
-
-<div class="memory">
-<span>❖</span>
-<p>Your Unique Personality</p>
-</div>
-
-<div class="memory">
-<span>♕</span>
-<p>Your Wonderful Friendship</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="card">
-
-<p class="subtitle">A PERSONAL MESSAGE</p>
-
-<h2>A Letter For You</h2>
-
-<div class="line"></div>
-
-<p>
-There are a few things that deserve to be said.
-</p>
-
-<div class="envelope" onclick="openLetter()">✉</div>
-
-<button onclick="openLetter()">OPEN YOUR LETTER</button>
-
-<div id="letter">
-
-<div class="line"></div>
-
-<h2>Dear Shifa,</h2>
-
-<p>
-I am genuinely grateful to have you as a friend.
-Some people make ordinary days feel special,
-and you are one of those people.
-<br><br>
-
-I hope this new chapter brings you happiness,
-success, peace and countless beautiful memories.
-<br><br>
-
-Always believe in yourself.
-Keep following your dreams and never lose
-that wonderful smile.
-<br><br>
-
-Thank you for being such a special friend.
-<br><br>
-
-With lots of good wishes,
-</p>
-
-<p class="gold-text">Your Friend</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="card">
-
-<p class="subtitle">A FINAL SURPRISE</p>
-
-<h2>Make A Wish</h2>
-
-<div class="line"></div>
-
-<p>
-Close your eyes, make a wish
-and let the magic begin.
-</p>
-
-<button onclick="showSurprise()">REVEAL YOUR SURPRISE ✨</button>
-
-<div id="surprise">
-
-<div class="line"></div>
-
-<h1 style="font-size:55px">Shine Always</h1>
-
-<p>
-May your dreams turn into reality,
-your days be filled with happiness,
-and your future be brighter than ever.
-<br><br>
-
-You deserve every beautiful thing life has to offer.
-<br><br>
-
-Happy Birthday, Fathima Shifa.
-</p>
-
-<p class="gold-text">With Best Wishes ✦</p>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<p class="subtitle">MADE WITH LOVE</p>
-
-<p>For Fathima Shifa</p>
-
-<p style="margin-top:15px">✦ Forever Keep Shining ✦</p>
-
-</footer>
-
-</div>
-
-<script>
-
-function createParticles(){
-
-for(let i=0;i<100;i++){
-
-let particle=document.createElement("div");
-
-particle.className="particle";
-
-particle.style.left=Math.random()*100+"vw";
-particle.style.top=Math.random()*100+"vh";
-
-let size=Math.random()*3+1;
-
-particle.style.width=size+"px";
-particle.style.height=size+"px";
-
-particle.style.animationDuration=(1+Math.random()*3)+"s";
-
-document.body.appendChild(particle);
-
-}
-
-}
-
-function startWebsite(){
-
-document.getElementById("intro").classList.add("hidden");
-
-document.getElementById("main").classList.remove("hidden");
-
-window.scrollTo(0,0);
-
-}
-
-function openLetter(){
-
-let letter=document.getElementById("letter");
-
-letter.style.display="block";
-
-letter.scrollIntoView({
-behavior:"smooth",
-block:"center"
-});
-
-}
-
-function showSurprise(){
-
-let surprise=document.getElementById("surprise");
-
-surprise.style.display="block";
-
-createConfetti();
-
-surprise.scrollIntoView({
-behavior:"smooth",
-block:"center"
-});
-
-}
-
-function createConfetti(){
-
-for(let i=0;i<100;i++){
-
-let item=document.createElement("div");
-
-item.className="confetti";
-
-item.style.left=Math.random()*100+"vw";
-
-item.style.animationDuration=(2+Math.random()*4)+"s";
-
-document.body.appendChild(item);
-
-setTimeout(()=>item.remove(),6000);
-
-}
-
-}
-
-createParticles();
-
-</script>
-
-</body>
-</html>
+<p class="subtitle
