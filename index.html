@@ -1,1 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Fathima Shifa ✨</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia,serif;
+background:linear-gradient(180deg,#080b27,#171044,#30175c);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+section{
+padding:75px 20px;
+position:relative;
+z-index:2;
+}
+
+h1{
+font-size:clamp(38px,8vw,65px);
+color:#ffd6fa;
+text-shadow:0 0 20px #e879ff;
+}
+
+h2{
+color:#f5c8ff;
+margin-bottom:25px;
+}
+
+p{
+line-height:1.9;
+font-size:17px;
+color:#eee1ff;
+}
+
+button{
+background:linear-gradient(90deg,#a855f7,#ec4899);
+border:none;
+padding:15px 30px;
+border-radius:30px;
+color:white;
+font-size:16px;
+cursor:pointer;
+margin:20px;
+box-shadow:0 0 25px #c084fc88;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+box-shadow:0 0 35px #e879ff;
+}
+
+.hidden{
+display:none!important;
+}
+
+#intro{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.moon{
+font-size:85px;
+filter:drop-shadow(0 0 25px #fff2b2);
+animation:moonGlow 3s infinite alternate;
+}
+
+.card{
+max-width:650px;
+margin:25px auto;
+padding:35px 22px;
+border:1px solid #d8a7ff66;
+border-radius:25px;
+background:#ffffff0c;
+backdrop-filter:blur(10px);
+box-shadow:0 0 35px #9b5cff33;
+}
+
+.photo-frame{
+display:inline-block;
+padding:10px;
+margin:30px;
+border-radius:20px;
+background:linear-gradient(135deg,#f0abfc,#818cf8,#f9a8d4);
+box-shadow:0 0 35px #d946ef88;
+animation:glow 3s infinite alternate;
+}
+
+.main-photo{
+width:230px;
+height:280px;
+object-fit:cover;
+border-radius:15px;
+display:block;
+}
+
+#letter,#surprise{
+display:none;
+animation:appear 1s ease;
+}
+
+.envelope{
+font-size:80px;
+cursor:pointer;
+margin:25px;
+animation:float 3s infinite ease-in-out;
+}
+
+.star{
+position:fixed;
+background:white;
+border-radius:50%;
+pointer-events:none;
+z-index:1;
+animation:twinkle 2s infinite alternate;
+}
+
+.shooting-star{
+position:fixed;
+width:100px;
+height:2px;
+background:linear-gradient(90deg,white,transparent);
+transform:rotate(-35deg);
+animation:shoot 1.5s linear forwards;
+z-index:1;
+}
+
+.heart{
+position:fixed;
+bottom:-30px;
+font-size:24px;
+animation:heartFloat 5s linear forwards;
+z-index:5;
+pointer-events:none;
+}
+
+footer{
+padding:35px;
+background:#ffffff0a;
+}
+
+@keyframes twinkle{
+from{opacity:.2;transform:scale(.7)}
+to{opacity:1;transform:scale(1.3)}
+}
+
+@keyframes moonGlow{
+from{filter:drop-shadow(0 0 10px #fff2b2)}
+to{filter:drop-shadow(0 0 40px #fff2b2)}
+}
+
+@keyframes glow{
+from{box-shadow:0 0 15px #d946ef}
+to{box-shadow:0 0 45px #c084fc}
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-15px)}
+}
+
+@keyframes appear{
+from{opacity:0;transform:translateY(25px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes heartFloat{
+to{
+transform:translateY(-110vh) rotate(360deg);
+opacity:0;
+}
+}
+
+@keyframes shoot{
+from{top:10%;left:100%;opacity:1}
+to{top:55%;left:-20%;opacity:0}
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+<section id="intro">
+
+<div class="moon">🌙</div>
+
+<p style="margin:20px">A Magical Night For Someone Special</p>
+
+<h1>Something Special<br>Awaits You</h1>
+
+<p style="margin-top:20px">
+A little birthday surprise made just for you.
+</p>
+
+<button onclick="startWebsite()">Enter Your Magical World ✨</button>
+
+</section>
+
+<div id="main" class="hidden">
+
+<section>
+
+<div class="moon">🌙</div>
+
+<p>A special day for a special person</p>
+
+<h1>Happy Birthday!</h1>
+
+<h2 style="font-size:35px">Fathima Shifa 💗</h2>
+
+<div class="photo-frame">
+
+<img src="shifa.png" class="main-photo" alt="Fathima Shifa">
+
+</div>
+
+<p>
+May your life shine brighter than all the stars in the sky.
+Keep smiling, keep dreaming and always stay wonderful.
+</p>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>✨ You Are One Of A Kind ✨</h2>
+
+<p>
+Some people make the world a little brighter just by being themselves.
+You are one of those people, Shifa.
+</p>
+
+<br>
+
+<p>🌸 Your beautiful smile</p>
+<p>💗 Your kind heart</p>
+<p>🦋 Your unique personality</p>
+<p>⭐ The happiness you bring</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>A Secret Message For You 💌</h2>
+
+<p>A little letter is waiting for you...</p>
+
+<div class="envelope" onclick="openLetter()">💌</div>
+
+<button onclick="openLetter()">Unlock Your Letter</button>
+
+<div id="letter">
+
+<h2>Dear Shifa, ❤️</h2>
+
+<p>
+I am truly grateful to have you as a friend.
+You make ordinary moments feel special.
+<br><br>
+
+I hope this new year of your life brings you
+endless happiness, success and beautiful memories.
+<br><br>
+
+Never stop believing in yourself.
+Keep following your dreams and never lose your beautiful smile.
+<br><br>
+
+May the universe always give you reasons to smile.
+<br><br>
+
+Happy Birthday once again!
+<br><br>
+
+With lots of good wishes,<br>
+Your Friend 💗
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>One Last Magical Surprise 🎆</h2>
+
+<p>
+Ready for a little birthday magic?
+</p>
+
+<button onclick="showSurprise()">Make A Wish ✨</button>
+
+<div id="surprise">
+
+<div style="font-size:65px;margin:25px">🎆 🌟 🎉</div>
+
+<h1 style="font-size:42px">Shine Forever!</h1>
+
+<p>
+May every star in the sky remind you
+how beautiful life can be.
+<br><br>
+
+May your dreams come true,
+your heart stay happy,
+and your smile never fade.
+<br><br>
+
+Happy Birthday, Fathima Shifa! ❤️
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Made with ❤️ under a sky full of stars.</p>
+
+<p>For Fathima Shifa 🌙</p>
+
+</footer>
+
+</div>
+
+<script>
+
+function createStars(){
+
+for(let i=0;i<100;i++){
+
+let star=document.createElement("div");
+
+star.className="star";
+
+star.style.left=Math.random()*100+"vw";
+star.style.top=Math.random()*100+"vh";
+
+let size=Math.random()*3+1;
+
+star.style.width=size+"px";
+star.style.height=size+"px";
+
+star.style.animationDuration=(1+Math.random()*3)+"s";
+
+document.body.appendChild(star);
+
+}
+
+}
+
+function startWebsite(){
+
+document.getElementById("intro").classList.add("hidden");
+
+document.getElementById("main").classList.remove("hidden");
+
+window.scrollTo(0,0);
+
+createHearts();
+
+}
+
+function openLetter(){
+
+let letter=document.getElementById("letter");
+
+letter.style.display="block";
+
+letter.scrollIntoView({behavior:"smooth",block:"center"});
+
+createHearts();
+
+}
+
+function showSurprise(){
+
+let surprise=document.getElementById("surprise");
+
+surprise.style.display="block";
+
+createHearts();
+
+for(let i=0;i<8;i++){
+
+setTimeout(createShootingStar,i*250);
+
+}
+
+surprise.scrollIntoView({behavior:"smooth",block:"center"});
+
+}
+
+function createHearts(){
+
+let symbols=["💗","💕","✨","🌸","⭐","🦋"];
+
+for(let i=0;i<20;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML=symbols[Math.floor(Math.random()*symbols.length)];
+
+heart.style.left=Math.random()*100+"vw";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),6000);
+
+}
+
+}
+
+function createShootingStar(){
+
+let star=document.createElement("div");
+
+star.className="shooting-star";
+
+document.body.appendChild(star);
+
+setTimeout(()=>star.remove(),1600);
+
+}
+
+createStars();
+
+</script>
+
+</body>
+</html>
